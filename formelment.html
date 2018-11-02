@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            My Form Login
+        </title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+            <legend>login form</legend>
+            <label for="username"> Username</label>
+            <input type="text" name="usernsme" id="username"/>
+            <br/>
+
+            <label for="pasword">Password</label>
+            <input type="password" name="password" id="password"/>
+            <br/>
+
+            Address: <br/>
+            <textarea rows="5" cols="100" name="address"></textarea>
+            <br/>
+            <input type="checkbox" name="hobbies" id="dancing" value="dancing">
+            <label for="dancing"> dancing</label>
+            <br/>
+            <input type="checkbox" name="hobbies" id="singing" value="singing" checked>
+            <label for="singing">singing</label>
+            <br/>
+
+            Gender:
+            <br/>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+            <br/>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <br/>
+            <label for="country">Country</label> <br/>
+            <select name="country" id="country" size="3" multiple>
+                <option value="nigeria">Nigeria</option>
+                <option value="ghana" label="Ghana"/>
+                <option value="kenya">Kenya</option>
+            </select>
+            <br/>
+            <input type="file" name="passport" accept=".jpg"/>
+            <br/>
+            <input type="hidden" name="Order_id" value="1"/>
+            <br/>
+            <button onclick="alert('Hello, and welcome to website')"/>
+            say Hello
+            </button>
+            <br/>
+            <input type="image" name="image_button" src="Capture1.PNG" width="200" height="50"/>
+            </fieldset>
+        </form>
+
+    </body>
+</html>

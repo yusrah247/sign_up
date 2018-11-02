@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    font-family: 'Times New Roman', Time, serif;
+    font-size: 14px;
+    font: bolder;
+    font-weight: bolder;
+}
+.container{
+    background-color: yellow;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+}
+.form1{
+    width: 120px;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+    height: 20px;
+}
+.form2{
+    border: 3px;
+    width: 170px;
+    float: left;
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    height: 25px;
+    border-style: groove;
+
+}
+.form3{
+    margin: 15px;
+}
+.form4{
+    margin: 5px 7px 5px 30px;
+}
