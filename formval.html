@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validated Registration Form</title>
+    <script type="text/javascript">
+        function validateForm() {
+            var email = document.forms["regForm"]["email"];
+            if (email.value == "") {
+                alert("Please input your email address");
+                email.focus();
+                return false;
+            }
+            var name = document.regForm.full_name;
+            if (name.value == "") {
+                alert("Please input your full name");
+                name.focus();
+                return false;
+            }
+            var phone = document.regForm.phone
+            if (phone.value == "" || isNaN(phonevalue)) {
+                alert("Phone number should be numeric.");
+                phone.focus();
+                return false;
+            }
+            if (phone.value.length != 11) {
+                alert("Phone number should be exactly 11 digits.");
+                phone.focus();
+                return false;
+            }
+            var tribe = document.regForm.tribe;
+            if (tribe.value == "-1") {
+                alert("Please select your tribe");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Registration Form with Validation</h3>
+    <form method="POST" name="regForm" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Registration Form:</legend>
+            <label for="full_name">Full Name:</label>
+            <input type="text" name="full_name" id="full_name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" id="phone">
+            <br>
+            <label for="tribe">Tribe:</label>
+            <select name="tribe">
+                <option value="-1" selected>Choose one</option>
+                <option value="ladi-kwali">Ladi Kwali</option>
+                <option value="queen-amina">Queen Amina</option>
+                <option value="margaret-ekpo">Margaret Ekpo</option>
+            </select>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
